@@ -64,20 +64,20 @@ The safety monitor can override the PI controller when an unsafe condition or in
 
 The simulated temperature dynamics are based on an energy-balance equation:
 
-\[
+$$
 \frac{dT}{dt} =
 \frac{Q-(h_p+h_f u)(T-T_a)}{C}
-\]
+$$
 
 Where:
 
-- \(T\): System temperature (°C)
-- \(T_a\): Ambient temperature (°C)
-- \(Q\): Applied heat input (W)
-- \(C\): Thermal capacity (J/°C)
-- \(h_p\): Passive cooling coefficient (W/°C)
-- \(h_f\): Fan cooling coefficient (W/°C)
-- \(u\): Normalized fan command, from 0 to 1
+- $T$: System temperature (°C)
+- $T_a$: Ambient temperature (°C)
+- $Q$: Applied heat input (W)
+- $C$: Thermal capacity (J/°C)
+- $h_p$: Passive cooling coefficient (W/°C)
+- $h_f$: Fan cooling coefficient (W/°C)
+- $u$: Normalized fan command, from 0 to 1
 
 The baseline simulation uses:
 
